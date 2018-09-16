@@ -30,10 +30,15 @@ h1, h2, h3 {
     color: var(--color-gold);
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus, a:focus {
     outline: none;
 }
 
 input[type=submit]:hover {
   cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--color-gold);
 }
