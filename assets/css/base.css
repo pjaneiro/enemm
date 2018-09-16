@@ -28,3 +28,11 @@ h1, h2, h3 {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: var(--color-gold);
 }
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
