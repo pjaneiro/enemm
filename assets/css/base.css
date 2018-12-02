@@ -38,7 +38,55 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
+p {
+  margin: 0;
+}
+
 a {
-  text-decoration: underline;
   color: var(--color-gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar .active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header {
+  grid-area: header;
+  padding: 0 2em;
+}
+
+.navbar {
+  grid-area: navbar;
+  height: 80px;
+  align-items: center;
+  padding-right: 2em;
+}
+
+.navbar a {
+  margin-right: 1em;
+}
+
+.footer {
+  grid-area: footer;
+  align-items: center;
+  padding: 2em;
 }
