@@ -87,9 +87,8 @@ html {
 .img {
   grid-area: img;
   min-height: 300px;
-  background-image: url(file:///Users/luisgonzaganunesmoreira/Desktop/ENEMM/enemm_meta3/assets/img/coimbra_about.jpeg);
+  background-image: url(file:///Users/luisgonzaganunesmoreira/Desktop/enemm/assets/img/coimbra_about.jpeg);
   background-size: cover;
-  margin-bottom: 1px;
 }
 
 .local {
@@ -110,9 +109,8 @@ html {
 .map {
   grid-area: map;
   min-height: 300px;
-  background-image: url(file:///Users/luisgonzaganunesmoreira/Desktop/ENEMM/enemm_meta3/assets/img/map_about.png);
+  background-image: url(file:///Users/luisgonzaganunesmoreira/Desktop/enemm/assets/img/map_about.png);
   background-size: cover;
-  margin-bottom: 1px;
 }
 
 .partners {
@@ -177,19 +175,11 @@ a {
   .matrix {
     display: none;
   }
-
-  .map {
-    margin-bottom: 0;
-  }
 }
 
 @media (max-width: 850px) {
   .about, .local, .partners {
     padding: 3em;
-  }
-
-  .img {
-    margin-bottom: 0;
   }
 }
 
@@ -223,11 +213,7 @@ a {
     min-height: 0;
     padding: 2em;
   }
-
-  .map {
-    margin-bottom: 1px;
-  }
-
+  
   .bs {
     display: none;
   }
