@@ -110,7 +110,9 @@ a {
 }
 
 html .info_show {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   position: fixed;
   width: 500px;
   height: 100%;
@@ -126,6 +128,8 @@ html .info_show {
 }
 
 .info_noshow a {
+  display: flex;
+  align-self: flex-start;
   margin: 2rem 0 0 2rem;
   padding: .5em;
   color: var(--color-gold);
@@ -141,7 +145,11 @@ html .info_show {
 
 
 .info_show p, .info_show h1 {
-  margin: 2rem 2rem;
+  margin: 1rem 2rem;
+}
+
+.info_show h1 {
+  margin-top: 5rem;
 }
 
 .menuInfo {
@@ -166,9 +174,9 @@ html .info_show {
 }
 
 
-@media (min-width: 761px) and (max-width: 950px) {
+@media (max-width: 950px) {
   .container {
-      grid-template-rows: 80px 80px 800px 80px;
+      grid-template-rows: 80px 80px 1610px 80px;
       grid-template-areas:
         'header navbar'
         'title hidden'
@@ -199,7 +207,7 @@ html .info_show {
 
 @media (max-width: 760px) {
   .container {
-    grid-template-rows: 80px 80px 800px 80px;
+    grid-template-rows: 80px 80px 2420px 80px;
       grid-template-areas:
         'header navbar'
         'title title'
@@ -218,9 +226,6 @@ html .info_show {
 
   .title {
     justify-content: flex-start;
-    align-items: center;
-    min-width: 0;
-    min-height: 0;
   }
 
   html .info_show {
