@@ -114,7 +114,7 @@ html .info_show {
   flex-direction: column;
   justify-content: flex-start;
   position: fixed;
-  width: 500px;
+  width: 600px;
   height: 100%;
   top: 0;
   right: 0;
@@ -173,11 +173,11 @@ html .info_show {
     transform: rotate(45deg) translate(-2px, -7px);
 }
 
-.main_toogle {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.grayscale_toogle {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 
 @media (max-width: 950px) {
   .container {

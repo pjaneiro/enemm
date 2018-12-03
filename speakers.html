@@ -78,11 +78,11 @@
         </script>
       </div>
     </div>
-    <div class="item title right">
+    <div id="myTitle" class="item title right">
         <h1>Oradores</h1>
     </div>
-    <div class="item hidden"></div>
-    <div class="item matrix_hidden">
+    <div id="myHidden" class="item hidden"></div>
+    <div id="myMatrix_Hidden" class="item matrix_hidden">
       <div class="square"></div>
       <div class="square"></div>
       <div class="square"></div>
@@ -96,8 +96,7 @@
       <div class="square"></div>
       <div class="square"></div>
     </div>
-
-    <div class="item matrix_speakers">
+    <div id="myMatrix_Speaker" class="item matrix_speakers">
       <div class="square speaker1" onclick="myFunction(this), openInfo(this)">
         <div class="speaker_info">
           <span class="speaker_name">Adriano Esteves</span><span>Burocratik</span>
@@ -233,12 +232,17 @@
       <script>
         function openInfo() {
           document.getElementById("myInfo").classList.toggle("info_show");
-          document.getElementById("myHeader").classList.toggle("main_toogle");
-          document.getElementById("myNavbar").classList.toggle("main_toogle");
+          document.getElementById("myHeader").classList.toggle("grayscale_toogle");
+          document.getElementById("myNavbar").classList.toggle("grayscale_toogle");
+          document.getElementById("myTitle").classList.toggle("grayscale_toogle");
+          document.getElementById("myHidden").classList.toggle("grayscale_toogle");
+          document.getElementById("myMatrix_Hidden").classList.toggle("grayscale_toogle");
+          document.getElementById("myMatrix_Speaker").classList.toggle("grayscale_toogle");
+          document.getElementById("myFooter").classList.toggle("grayscale_toogle");
         }
       </script>
     </div>
-    <div class="item footer right">
+    <div id="myFooter" class="item footer right">
       <small>Made with ♥ by <a href="https://nei.dei.uc.pt" target="_blank">NEI/AAC</a></small>
     </div>
   </div>
