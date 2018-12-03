@@ -173,6 +173,11 @@ html .info_show {
     transform: rotate(45deg) translate(-2px, -7px);
 }
 
+.main_toogle {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
 @media (max-width: 950px) {
   .container {

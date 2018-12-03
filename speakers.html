@@ -31,10 +31,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="item header center">
+    <div id="myHeader" class="item header center">
       <a href="index.html"><h1>ENEMM'19</h1></a>
     </div>
-    <div class="item navbar right">
+    <div id="myNavbar" class="item navbar right">
       <div class="bs">
         <a href="about.html">Sobre</a>
         <a class="active" href="speakers.html">Oradores</a>
@@ -233,7 +233,8 @@
       <script>
         function openInfo() {
           document.getElementById("myInfo").classList.toggle("info_show");
-          document.getElementById("myInfo").classList.toggle("main_toogle");
+          document.getElementById("myHeader").classList.toggle("main_toogle");
+          document.getElementById("myNavbar").classList.toggle("main_toogle");
         }
       </script>
     </div>
