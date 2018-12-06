@@ -66,13 +66,16 @@ html {
 }
 
 .speaker1 {
+  display: flex;
+  align-items: flex-end;
   background-image: url(file:///Users/luisgonzaganunesmoreira/Desktop/enemm/assets/img/speaker1.png);
   background-size: cover;
   cursor: pointer;
 }
 
 .speaker2 {
-  min-height: 100px;
+  display: flex;
+  align-items: flex-end;
   background-image: url(file:///Users/luisgonzaganunesmoreira/Desktop/enemm/assets/img/speaker2.png);
   background-size: cover;
   cursor: pointer;
@@ -94,6 +97,7 @@ html {
   background-color: var(--color-black);
   color: var(--color-gold);
   font-weight: 500;
+  font-size: 14px;
 }
 
 .speaker_name {
