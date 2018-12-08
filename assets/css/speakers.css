@@ -55,7 +55,7 @@ html {
   grid-area: matrix_speakers;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1px;
   background-color: var(--color-black);
 }
@@ -115,13 +115,14 @@ a {
 }
 
 html .info_show {
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 600px;
-  height: 130vh;
   top: 0;
+  bottom: 0;
   right: 0;
   z-index: 10;
   background: var(--color-black);
@@ -133,28 +134,15 @@ html .info_show {
 }
 
 .info_noshow a {
-  display: flex;
-  align-self: flex-start;
-  margin: 2rem 0 0 2rem;
-  padding: .5em;
   color: var(--color-gold);
-  border: 1px solid var(--color-gold);
 }
-
-.info_noshow a:hover {
-  text-decoration: none;
-  color: var(--color-black);
-  border: 1px solid var(--color-black);
-  background-color: var(--color-gold);
-}
-
 
 .info_show p, .info_show h1, .info_show h3 {
   margin: 1rem 2rem;
 }
 
 .info_show h1 {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .info_show h3 {
@@ -184,6 +172,7 @@ html .info_show {
 }
 
 .grayscale_toogle {
+    overflow-y: hidden;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -231,8 +220,8 @@ html .info_show {
   }
 
   .matrix_speakers {
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .matrix_hidden, .hidden {
@@ -243,9 +232,13 @@ html .info_show {
     justify-content: flex-start;
   }
 
+  .matrix_speakers .square {
+    min-height: 300px;
+  }
+
   html .info_show {
     width: 100%;
-    height: 220vh;
     top: 0;
+    bottom: 0;
   }
 }
